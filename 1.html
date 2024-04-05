@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Level X - Download</title> <!-- Change this to your desired title -->
+        <meta name="description"
+            content="Level X - The ultimate gaming league application for competitive gamers in India. Join thousands of players in intense battles, tournaments, and challenges!">
+        <meta name="keywords" content="Level X, gaming league, competitive gamers, India, tournaments, challenges">
+        <meta name="author" content="Your Name">
+        <meta name="robots" content="index, follow">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <style>
+            body {
+                font-family: 'Lato', sans-serif;
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(to bottom, #4c5c96, #324475);
+                color: #fff;
+            }
+
+            .container {
+                max-width: 1000px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: rgba(255, 255, 255, 0.2);
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+                position: relative;
+            }
+
+            h1 {
+                text-align: center;
+                color: #fff;
+                font-family: 'Playfair Display', serif;
+                font-size: 42px;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+
+            .banner {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                margin-bottom: 30px;
+            }
+
+            .logo {
+                width: 150px;
+                height: 150px;
+                display: block;
+                margin: 0 auto 30px;
+                border-radius: 50%;
+            }
+
+            .download-button {
+                display: block;
+                width: 200px;
+                padding: 15px;
+                margin: 30px auto;
+                text-align: center;
+                background-color: #58a15e;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+                font-size: 18px;
+                font-family: 'Playfair Display', serif;
+            }
+
+            .download-button:hover {
+                background-color: #4a8a4e;
+            }
+
+            .download-icon {
+                font-size: 24px;
+                margin-right: 10px;
+            }
+
+            p {
+                text-align: justify;
+                color: #eee;
+                line-height: 1.6;
+                font-size: 18px;
+                font-family: 'Lato', sans-serif;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            li {
+                margin-bottom: 10px;
+                font-size: 18px;
+                font-family: 'Lato', sans-serif;
+            }
+
+            .testimonial {
+                background-color: rgba(255, 255, 255, 0.1);
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 30px;
+            }
+
+            .testimonial p {
+                margin: 0;
+                font-style: italic;
+                font-family: 'Lato', sans-serif;
+            }
+
+            .feature {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: rgba(255, 255, 255, 0.1);
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 30px;
+            }
+
+            .feature img {
+                width: 50%;
+                max-width: 200px;
+                border-radius: 10px;
+            }
+
+            .feature-text {
+                width: 50%;
+                padding: 0 20px;
+                box-sizing: border-box;
+            }
+
+            .feature-text h2 {
+                margin-top: 0;
+                font-size: 24px;
+                font-family: 'Playfair Display', serif;
+            }
+
+            .subscribe-form {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .subscribe-form input[type="email"] {
+                width: 100%;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+
+            .subscribe-form input[type="submit"] {
+                padding: 10px 20px;
+                background-color: #58a15e;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .subscribe-form input[type="submit"]:hover {
+                background-color: #4a8a4e;
+            }
+
+            .earn-money {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .earn-money h2 {
+                font-size: 24px;
+                font-family: 'Playfair Display', serif;
+                margin-bottom: 10px;
+            }
+
+            .earn-money p {
+                font-size: 18px;
+                font-family: 'Lato', sans-serif;
+            }
+
+            .earn-money a {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #58a15e;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+
+            .earn-money a:hover {
+                background-color: #4a8a4e;
+            }
+
+            /* Responsive Styles */
+            @media only screen and (max-width: 768px) {
+                .container {
+                    padding: 10px;
+                }
+
+                .logo {
+                    width: 100px;
+                    height: 100px;
+                }
+
+                h1 {
+                    font-size: 32px;
+                }
+
+                .download-button {
+                    width: 150px;
+                    font-size: 16px;
+                }
+
+                p,
+                ul,
+                .testimonial p,
+                .feature-text p,
+                .earn-money p {
+                    font-size: 16px;
+                }
+
+                .feature-text h2,
+                .earn-money h2 {
+                    font-size: 20px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Dscn4066-pendennis-dark-in-shed_crop_1200x600.jpg"
+                alt="Level X Banner" class="banner">
+            <img src="http://www.clker.com/cliparts/R/S/Z/4/t/f/crossed-hammers-bw-100x100-md.png" alt="Level X Logo"
+                class="logo">
+            <h1>Welcome to Level X</h1>
+            <a href="https://drive.usercontent.google.com/download?id=1sN7iNCm5A2pAj7z1EK6Z6sD-I444QO1u&export=download&authuser=0&confirm=t&uuid=5cec66c4-14f9-49ec-9bd3-0e76e736a655&at=APZUnTW8XQOzxcqJYp7gEgB9mzut%3A1712348016217"
+                class="download-button">
+                <span class="download-icon">&#x2B07;</span> Download APK Now
+            </a>
+            <p>Level X is the ultimate gaming league application for competitive gamers like you. Join thousands of
+                players in intense battles, tournaments, and challenges! Whether you're a casual gamer looking for some
+                fun or a hardcore competitive player seeking glory, Level X has something for everyone.</p>
+            <h2>Key Features:</h2>
+            <ul>
+                <li>Real-time match tracking</li>
+                <li>Customizable profiles</li>
+                <li>In-app messaging</li>
+                <li>Leaderboards and rankings</li>
+                <li>Exclusive in-game rewards and bonuses</li>
+                <li>Integration with popular gaming platforms</li>
+                <li>Regular updates and new features</li>
+            </ul>
+            <div class="testimonial">
+                <p>"Level X transformed the way I play games. It's intuitive, fast, and incredibly fun!"</p>
+                <p>- John Doe, Pro Gamer</p>
+            </div>
+            <div class="feature">
+                <img src="https://via.placeholder.com/200" alt="Feature Image">
+                <div class="feature-text">
+                    <h2>New Feature: Tournament Mode</h2>
+                    <p>Experience the thrill of competitive gaming with our new Tournament Mode. Compete against the
+                        best
+                        players, climb the ranks, and win amazing prizes!</p>
+                </div>
+            </div>
+            <div class="subscribe-form">
+                <h2>Subscribe to Our Newsletter</h2>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Your Email Address" required>
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+            <div class="earn-money">
+                <h2>Earn Money by Playing Games</h2>
+                <p>With Level X, you can turn your gaming skills into cash! Participate in sponsored tournaments,
+                    complete
+                    challenges, and earn rewards that you can redeem for real money.</p>
+            </div>
+            <p>Join Level X today and elevate your gaming experience to the next level!</p>
+        </div>
+
+        <script>
+            const sections = document.querySelectorAll('.container > *');
+            const options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.2
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        </script>
+    </body>
+
+</html>
