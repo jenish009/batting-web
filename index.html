@@ -51,8 +51,8 @@
             }
 
             .logo {
-                width: 150px;
-                height: 150px;
+                width: 200px;
+                height: 200px;
                 display: block;
                 margin: 0 auto 30px;
                 border-radius: 50%;
@@ -195,6 +195,18 @@
                 transition: background-color 0.3s ease;
             }
 
+            .game-section {
+                background: linear-gradient(135deg, #3498db, #9b59b6);
+                /* Gradient background from blue to purple */
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 30px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                /* Add a soft shadow for depth */
+                color: #fff;
+                /* Text color */
+            }
+
             .earn-money a:hover {
                 background-color: #4a8a4e;
             }
@@ -232,15 +244,51 @@
                     font-size: 20px;
                 }
             }
+
+            header {
+                background-color: #2c3e50;
+                /* Dark blue */
+                color: #fff;
+                padding: 20px 0;
+                text-align: center;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                /* Add a subtle shadow */
+            }
+
+            header h1 {
+                margin: 0;
+                font-family: 'Playfair Display', serif;
+                font-size: 36px;
+                text-transform: uppercase;
+                /* Convert text to uppercase */
+            }
+
+            /* Footer styles */
+            footer {
+                background-color: #2c3e50;
+                /* Dark blue */
+                color: #fff;
+                padding: 20px 0;
+                text-align: center;
+            }
+
+            footer p {
+                text-align: center;
+                margin: 0;
+                font-size: 14px;
+                opacity: 0.8;
+                /* Reduce opacity for a subtle effect */
+            }
         </style>
     </head>
 
     <body>
+        <header>
+            <h1>Level X</h1>
+        </header>
         <div class="container">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Dscn4066-pendennis-dark-in-shed_crop_1200x600.jpg"
-                alt="Level X Banner" class="banner">
-            <img src="http://www.clker.com/cliparts/R/S/Z/4/t/f/crossed-hammers-bw-100x100-md.png" alt="Level X Logo"
-                class="logo">
+            <img src="banner.jpeg" alt="Level X Banner" class="banner">
+            <img src="level-x-logo1.jpg" alt="Level X Logo" class="logo">
             <h1>Welcome to Level X</h1>
             <a href="https://drive.usercontent.google.com/download?id=1sN7iNCm5A2pAj7z1EK6Z6sD-I444QO1u&export=download&authuser=0&confirm=t&uuid=5cec66c4-14f9-49ec-9bd3-0e76e736a655&at=APZUnTW8XQOzxcqJYp7gEgB9mzut%3A1712348016217"
                 class="download-button">
@@ -263,14 +311,37 @@
                 <p>"Level X transformed the way I play games. It's intuitive, fast, and incredibly fun!"</p>
                 <p>- John Doe, Pro Gamer</p>
             </div>
-            <div class="feature">
-                <img src="https://via.placeholder.com/200" alt="Feature Image">
-                <div class="feature-text">
-                    <h2>New Feature: Tournament Mode</h2>
-                    <p>Experience the thrill of competitive gaming with our new Tournament Mode. Compete against the
-                        best
-                        players, climb the ranks, and win amazing prizes!</p>
-                </div>
+
+
+            <div class="earn-money">
+                <h2>Earn Money by Playing Games</h2>
+                <p>With Level X, you can turn your gaming skills into cash! Participate in sponsored tournaments,
+                    complete
+                    challenges, and earn rewards that you can redeem for real money.</p>
+            </div>
+            <p>Join Level X today and elevate your gaming experience to the next level!</p>
+            <div class="game-section">
+                <h2>Daily Lucky Draw</h2>
+                <p>Participate in our daily lucky draw events for a chance to win exciting prizes! Every day, we
+                    randomly select lucky winners from our active users.</p>
+                <p>Don't miss out on your opportunity to win big with Level X!</p>
+            </div>
+
+            <!-- Cricket Leagues Section -->
+            <div class="game-section">
+                <h2>Cricket Leagues</h2>
+                <p>Love cricket? Compete in our cricket leagues and showcase your skills on the virtual pitch! Join
+                    teams, compete in matches, and climb the leaderboard to win cash prizes.</p>
+                <p>Experience the thrill of cricket like never before with Level X!</p>
+            </div>
+
+            <!-- Other Games Section -->
+            <div class="game-section">
+                <h2>Other Games</h2>
+                <p>In addition to lucky draws and cricket leagues, Level X offers a wide range of other games for you to
+                    enjoy and win real cash prizes. From action-packed shooters to strategic board games, there's
+                    something for everyone!</p>
+                <p>Explore our collection of games and start earning today!</p>
             </div>
             <div class="subscribe-form">
                 <h2>Subscribe to Our Newsletter</h2>
@@ -279,15 +350,10 @@
                     <input type="submit" value="Subscribe">
                 </form>
             </div>
-            <div class="earn-money">
-                <h2>Earn Money by Playing Games</h2>
-                <p>With Level X, you can turn your gaming skills into cash! Participate in sponsored tournaments,
-                    complete
-                    challenges, and earn rewards that you can redeem for real money.</p>
-            </div>
-            <p>Join Level X today and elevate your gaming experience to the next level!</p>
         </div>
-
+        <footer>
+            <p>&copy; 2024 Level X. All rights reserved.</p>
+        </footer>
         <script>
             const sections = document.querySelectorAll('.container > *');
             const options = {
