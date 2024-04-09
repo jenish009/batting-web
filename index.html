@@ -4,44 +4,49 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Level X - Download</title>
+        <title>Level X - Download & Level Up Your Game | Competitive Gaming in India</title>
         <meta name="description"
-            content="Level X - The ultimate gaming league application for competitive gamers in India. Join thousands of players in intense battles, tournaments, and challenges!">
-        <meta name="keywords" content="Level X, gaming league, competitive gamers, India, tournaments, challenges">
-        <meta name="author" content="Your Name">
+            content="Level X - The ultimate gaming league app for competitive gamers in India. Join tournaments, challenges, and battles! Earn rewards, climb leaderboards, and elevate your game.">
+        <meta name="keywords"
+            content="Level X, gaming league, competitive gaming, India, tournaments, challenges, esports, mobile gaming, PC gaming, cash prizes, rewards, leaderboards">
+        <meta name="author" content="Level X ">
         <meta name="robots" content="index, follow">
 
-        <!-- Open Graph meta tags for social media -->
-        <meta property="og:title" content="Level X - Download">
+        <meta property="og:title" content="Level X - Download & Level Up Your Game | Competitive Gaming in India">
         <meta property="og:description"
-            content="Level X - The ultimate gaming league application for competitive gamers in India. Join thousands of players in intense battles, tournaments, and challenges!">
+            content="Level X - The ultimate gaming league app for competitive gamers in India. Join tournaments, challenges, and battles! Earn rewards, climb leaderboards, and elevate your game.">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://level-x.onrender.com">
         <meta property="og:image" content="https://level-x.onrender.com/level-x-logo1.jpg">
         <meta property="og:image:alt" content="Level X Banner">
         <meta property="og:site_name" content="Level X">
 
-        <!-- Twitter Card meta tags -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Level X - Download">
+        <meta name="twitter:title" content="Level X - Download & Level Up Your Game | Competitive Gaming in India">
         <meta name="twitter:description"
-            content="Level X - The ultimate gaming league application for competitive gamers in India. Join thousands of players in intense battles, tournaments, and challenges!">
+            content="Level X - The ultimate gaming league app for competitive gamers in India. Join tournaments, challenges, and battles! Earn rewards, climb leaderboards, and elevate your game.">
         <meta name="twitter:image" content="https://level-x.onrender.com/level-x-logo1.jpg">
-        <meta name="google-site-verification" content="KKtWy5JJAMJrMlKzNLxJ2YwtqNK-PqkJahm_3MOwEUs" />
-        <!-- Google Fonts and external CSS -->
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato&display=swap"
+
+        <link rel="canonical" href="https://level-x.onrender.com">
+        <meta name="subject" content="Level X - Competitive Gaming League in India">
+        <meta name="audience" content="Competitive Gamers, Gamers in India">
+        <meta name=" revisit-after" content="7 Days">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-        <!-- Favicon for Google Chrome tab -->
         <link rel="icon" type="image/png" href="level-x-logo1.jpg">
         <style>
+            /* Global Styles */
             body {
-                font-family: 'Lato', sans-serif;
+                background-color: #171a21;
+                color: #fff;
+                font-family: 'Montserrat', sans-serif;
                 margin: 0;
                 padding: 0;
-                background: linear-gradient(to bottom, #4c5c96, #324475);
-                color: #fff;
             }
 
             .container {
@@ -54,14 +59,20 @@
                 position: relative;
             }
 
-            h1 {
-                text-align: center;
+            /* Header Styles */
+            header {
+                background-color: #2c3e50;
                 color: #fff;
-                font-family: 'Playfair Display', serif;
-                font-size: 42px;
-                margin-bottom: 20px;
+                padding: 20px 0;
+                text-align: center;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            }
+
+            header h1 {
+                margin: 0;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 36px;
                 text-transform: uppercase;
-                letter-spacing: 2px;
             }
 
             .banner {
@@ -70,16 +81,55 @@
                 height: auto;
                 border-radius: 10px;
                 margin-bottom: 30px;
+                animation: zoom-shake 2s ease-in-out infinite alternate, pulse 1.5s infinite alternate;
             }
 
+            @keyframes zoom-shake {
+
+                0%,
+                100% {
+                    transform: scale(1) rotate(0deg);
+                }
+
+                50% {
+                    transform: scale(1.05) rotate(2deg);
+                }
+
+                75% {
+                    transform: scale(1) rotate(-2deg);
+                }
+            }
+
+            /* Logo Styles */
             .logo {
                 width: 200px;
                 height: 200px;
                 display: block;
                 margin: 0 auto 30px;
                 border-radius: 50%;
+                animation: bounce 1s infinite;
             }
 
+            @keyframes bounce {
+
+                0%,
+                20%,
+                50%,
+                80%,
+                100% {
+                    transform: translateY(0);
+                }
+
+                40% {
+                    transform: translateY(-30px);
+                }
+
+                60% {
+                    transform: translateY(-15px);
+                }
+            }
+
+            /* Download Button Styles */
             .download-button {
                 display: block;
                 width: 200px;
@@ -91,11 +141,13 @@
                 text-decoration: none;
                 border-radius: 5px;
                 font-size: 18px;
-                font-family: 'Playfair Display', serif;
+                font-family: 'Montserrat', sans-serif;
+                transition: transform 0.3s ease;
             }
 
             .download-button:hover {
                 background-color: #4a8a4e;
+                transform: scale(1.05);
             }
 
             .download-icon {
@@ -103,12 +155,17 @@
                 margin-right: 10px;
             }
 
-            p {
+            /* Content Styles */
+            p,
+            ul,
+            .testimonial p,
+            .feature-text p,
+            .earn-money p {
                 text-align: justify;
                 color: #eee;
                 line-height: 1.6;
                 font-size: 18px;
-                font-family: 'Lato', sans-serif;
+                font-family: 'Montserrat', sans-serif;
             }
 
             ul {
@@ -121,7 +178,7 @@
             li {
                 margin-bottom: 10px;
                 font-size: 18px;
-                font-family: 'Lato', sans-serif;
+                font-family: 'Montserrat', sans-serif;
             }
 
             .testimonial {
@@ -134,9 +191,10 @@
             .testimonial p {
                 margin: 0;
                 font-style: italic;
-                font-family: 'Lato', sans-serif;
+                font-family: 'Montserrat', sans-serif;
             }
 
+            /* Feature Section Styles */
             .feature {
                 display: flex;
                 align-items: center;
@@ -151,20 +209,17 @@
                 width: 50%;
                 max-width: 200px;
                 border-radius: 10px;
+                animation: slideInLeft 1s ease;
             }
 
             .feature-text {
                 width: 50%;
                 padding: 0 20px;
                 box-sizing: border-box;
+                animation: slideInRight 1s ease;
             }
 
-            .feature-text h2 {
-                margin-top: 0;
-                font-size: 24px;
-                font-family: 'Playfair Display', serif;
-            }
-
+            /* Subscribe Form Styles */
             .subscribe-form {
                 text-align: center;
                 margin-bottom: 30px;
@@ -185,12 +240,15 @@
                 border: none;
                 border-radius: 5px;
                 cursor: pointer;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 18px;
             }
 
             .subscribe-form input[type="submit"]:hover {
                 background-color: #4a8a4e;
             }
 
+            /* Earn Money Section Styles */
             .earn-money {
                 text-align: center;
                 margin-bottom: 30px;
@@ -198,13 +256,8 @@
 
             .earn-money h2 {
                 font-size: 24px;
-                font-family: 'Playfair Display', serif;
+                font-family: 'Montserrat', sans-serif;
                 margin-bottom: 10px;
-            }
-
-            .earn-money p {
-                font-size: 18px;
-                font-family: 'Lato', sans-serif;
             }
 
             .earn-money a {
@@ -215,80 +268,27 @@
                 text-decoration: none;
                 border-radius: 5px;
                 transition: background-color 0.3s ease;
-            }
-
-            .game-section {
-                background: linear-gradient(135deg, #3498db, #9b59b6);
-                /* Gradient background from blue to purple */
-                padding: 20px;
-                border-radius: 10px;
-                margin-bottom: 30px;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                /* Add a soft shadow for depth */
-                color: #fff;
-                /* Text color */
+                font-family: 'Montserrat', sans-serif;
+                font-size: 18px;
             }
 
             .earn-money a:hover {
                 background-color: #4a8a4e;
             }
 
-            /* Responsive Styles */
-            @media only screen and (max-width: 768px) {
-                .container {
-                    padding: 10px;
-                }
-
-                .logo {
-                    width: 100px;
-                    height: 100px;
-                }
-
-                h1 {
-                    font-size: 32px;
-                }
-
-                .download-button {
-                    width: 150px;
-                    font-size: 16px;
-                }
-
-                p,
-                ul,
-                .testimonial p,
-                .feature-text p,
-                .earn-money p {
-                    font-size: 16px;
-                }
-
-                .feature-text h2,
-                .earn-money h2 {
-                    font-size: 20px;
-                }
-            }
-
-            header {
-                background-color: #2c3e50;
-                /* Dark blue */
+            /* Game Section Styles */
+            .game-section {
+                background: linear-gradient(135deg, #3498db, #9b59b6);
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 30px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
                 color: #fff;
-                padding: 20px 0;
-                text-align: center;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-                /* Add a subtle shadow */
             }
 
-            header h1 {
-                margin: 0;
-                font-family: 'Playfair Display', serif;
-                font-size: 36px;
-                text-transform: uppercase;
-                /* Convert text to uppercase */
-            }
-
-            /* Footer styles */
+            /* Footer Styles */
             footer {
                 background-color: #2c3e50;
-                /* Dark blue */
                 color: #fff;
                 padding: 20px 0;
                 text-align: center;
@@ -299,7 +299,6 @@
                 margin: 0;
                 font-size: 14px;
                 opacity: 0.8;
-                /* Reduce opacity for a subtle effect */
             }
         </style>
     </head>
@@ -334,12 +333,12 @@
                 <p>- John Doe, Pro Gamer</p>
             </div>
 
-
             <div class="earn-money">
                 <h2>Earn Money by Playing Games</h2>
                 <p>With Level X, you can turn your gaming skills into cash! Participate in sponsored tournaments,
                     complete
                     challenges, and earn rewards that you can redeem for real money.</p>
+                <a href="#" class="download-button">Start Earning Now</a>
             </div>
             <p>Join Level X today and elevate your gaming experience to the next level!</p>
             <div class="game-section">
