@@ -102,8 +102,8 @@
 
             /* Logo Styles */
             .logo {
-                width: 200px;
-                height: 200px;
+                width: 150px;
+                height: 150px;
                 display: block;
                 margin: 0 auto 30px;
                 border-radius: 50%;
@@ -351,11 +351,33 @@
             }
 
             .background-text h1 {
-                font-size: 850%;
+                font-size: 410px;
                 font-weight: bold;
                 font-family: 'Montserrat', sans-serif;
                 color: rgba(240, 225, 15, 0.1);
                 /* Text color with reduced opacity */
+            }
+
+            @media screen and (max-width: 767px) {
+                .background-text {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    height: 100vh;
+                    width: 100%;
+                }
+
+                .background-text h1 {
+                    font-size: 100px;
+                    /* Adjust font size as needed */
+                }
+
+                .logo {
+                    width: 100px;
+                    height: 100px;
+
+                }
             }
         </style>
     </head>
