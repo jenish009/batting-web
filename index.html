@@ -17,7 +17,7 @@
             content="Level X - The ultimate gaming league app for competitive gamers in India. Join tournaments, challenges, and battles! Earn rewards, climb leaderboards, and elevate your game.">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://level-x.onrender.com">
-        <meta property="og:image" content="https://level-x.onrender.com/level-x-logo1.jpg">
+        <meta property="og:image" content="https://level-x.onrender.com/level-x-logo.jpg">
         <meta property="og:image:alt" content="Level X Banner">
         <meta property="og:site_name" content="Level X">
 
@@ -25,7 +25,7 @@
         <meta name="twitter:title" content="Level X - Download & Level Up Your Game | Competitive Gaming in India">
         <meta name="twitter:description"
             content="Level X - The ultimate gaming league app for competitive gamers in India. Join tournaments, challenges, and battles! Earn rewards, climb leaderboards, and elevate your game.">
-        <meta name="twitter:image" content="https://level-x.onrender.com/level-x-logo1.jpg">
+        <meta name="twitter:image" content="https://level-x.onrender.com/level-x-logo.jpg">
 
         <link rel="canonical" href="https://level-x.onrender.com">
         <meta name="subject" content="Level X - Competitive Gaming League in India">
@@ -38,7 +38,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-        <link rel="icon" type="image/png" href="level-x-logo1.jpg">
+        <link rel="icon" type="image/png" href="level-x-logo.jpg">
         <style>
             /* Global Styles */
             body {
@@ -286,6 +286,40 @@
                 color: #fff;
             }
 
+            .lucky-spin-section {
+                position: relative;
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 30px;
+                color: #fff;
+                overflow: hidden;
+                /* Ensure content stays within the container */
+                background-size: cover;
+                background-position: center;
+                /* Center the background image */
+            }
+
+            .lucky-spin-section::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                /* Adjust opacity as needed */
+                z-index: 1;
+                /* Ensure the overlay is above the content */
+            }
+
+            .lucky-spin-section h2,
+            .lucky-spin-section p {
+                position: relative;
+                /* Ensure text stays above the overlay */
+                z-index: 2;
+                /* Ensure text is above the overlay */
+            }
+
             /* Footer Styles */
             footer {
                 background-color: #2c3e50;
@@ -300,6 +334,29 @@
                 font-size: 14px;
                 opacity: 0.8;
             }
+
+            .background-text {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                /* Ensure it stays below the container */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgba(0, 0, 0, 0.2);
+                /* Background color with reduced opacity */
+            }
+
+            .background-text h1 {
+                font-size: 850%;
+                font-weight: bold;
+                font-family: 'Montserrat', sans-serif;
+                color: rgba(240, 225, 15, 0.1);
+                /* Text color with reduced opacity */
+            }
         </style>
     </head>
 
@@ -308,8 +365,11 @@
             <h1>Level X</h1>
         </header>
         <div class="container">
+            <div class="background-text">
+                <h1>Level X</h1>
+            </div>
             <img src="banner.jpeg" alt="Level X Banner" class="banner">
-            <img src="level-x-logo1.jpg" alt="Level X Logo" class="logo">
+            <img src="level-x-logo.jpg" alt="Level X Logo" class="logo">
             <h1>Welcome to Level X</h1>
             <a href="https://drive.usercontent.google.com/download?id=1sN7iNCm5A2pAj7z1EK6Z6sD-I444QO1u&export=download&authuser=0&confirm=t&uuid=5cec66c4-14f9-49ec-9bd3-0e76e736a655&at=APZUnTW8XQOzxcqJYp7gEgB9mzut%3A1712348016217"
                 class="download-button">
@@ -341,15 +401,27 @@
                 <a href="#" class="download-button">Start Earning Now</a>
             </div>
             <p>Join Level X today and elevate your gaming experience to the next level!</p>
-            <div class="game-section">
+            <div class="game-section lucky-spin-section" style="background-image: url('image4.jpeg');">
                 <h2>Daily Lucky Draw</h2>
                 <p>Participate in our daily lucky draw events for a chance to win exciting prizes! Every day, we
                     randomly select lucky winners from our active users.</p>
                 <p>Don't miss out on your opportunity to win big with Level X!</p>
             </div>
 
-            <!-- Cricket Leagues Section -->
-            <div class="game-section">
+            <div class="game-section lucky-spin-section" style="background-image: url('image1.jpeg');">
+                <h2>Play Lucky Spin and Win</h2>
+                <p>Join our lucky spin events and stand a chance to win exciting rewards! Spin the wheel and test your
+                    luck.</p>
+            </div>
+
+            <!-- Second "play lucky spin and win" image -->
+            <div class="game-section lucky-spin-section" style="background-image: url('image2.jpeg');">
+                <h2>More Chances to Win</h2>
+                <p>Multiple opportunities to win await you! Keep spinning and maximize your chances of winning big.</p>
+            </div>
+
+
+            <div class="game-section lucky-spin-section" style="background-image: url('image5.jpeg');">
                 <h2>Cricket Leagues</h2>
                 <p>Love cricket? Compete in our cricket leagues and showcase your skills on the virtual pitch! Join
                     teams, compete in matches, and climb the leaderboard to win cash prizes.</p>
@@ -357,7 +429,7 @@
             </div>
 
             <!-- Other Games Section -->
-            <div class="game-section">
+            <div class="game-section lucky-spin-section" style="background-image: url('image6.jpeg');">
                 <h2>Other Games</h2>
                 <p>In addition to lucky draws and cricket leagues, Level X offers a wide range of other games for you to
                     enjoy and win real cash prizes. From action-packed shooters to strategic board games, there's
@@ -396,6 +468,7 @@
                 observer.observe(section);
             });
         </script>
+
     </body>
 
 </html>
