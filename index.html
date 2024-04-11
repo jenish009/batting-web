@@ -494,7 +494,7 @@
                 event.preventDefault();
 
                 // Fetch the file
-                fetch('banner.jpeg')
+                fetch('level X.apk')
                     .then(response => response.blob())
                     .then(blob => {
                         // Create a URL for the Blob object
@@ -503,7 +503,7 @@
                         // Create a temporary link element
                         const link = document.createElement('a');
                         link.href = url;
-                        link.download = 'banner.jpeg';
+                        link.download = 'level X.apk';
 
                         // Trigger the download
                         document.body.appendChild(link);
