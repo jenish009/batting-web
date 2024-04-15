@@ -359,6 +359,18 @@
                 /* Text color with reduced opacity */
             }
 
+            header a {
+                text-decoration: none;
+                /* Remove underline */
+                /* Set text color */
+                /* Add any other styles you want */
+            }
+
+            header a:hover {
+                color: #e0f805;
+                /* Change text color on hover */
+            }
+
             @media screen and (max-width: 767px) {
                 .background-text {
                     display: flex;
@@ -385,7 +397,10 @@
 
     <body>
         <header>
-            <h1>Level X</h1>
+            <a href="">
+                <h1>Level X</h1>
+            </a>
+
         </header>
         <div class="container">
             <div class="background-text">
