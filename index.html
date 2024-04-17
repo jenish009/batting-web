@@ -7,10 +7,10 @@
         <title>Level X - Download & Level Up Your Game | Competitive Gaming in India | Lucky Draw, Tournaments,
             Challenges</title>
         <meta name="description"
-            content="Level X - The ultimate gaming league app for competitive gamers in India. Join tournaments, challenges, and battles! Earn rewards, climb leaderboards, and elevate your game. Participate in lucky draws, buy coupons, and play online games for cash prizes.">
+            content="Level X - The ultimate gaming league app for competitive gamers in India. Join tournaments, challenges, and battles! Earn rewards, climb leaderboards, and elevate your game. Participate in lucky draws, refer friends, and play online games for cash prizes.">
         <meta name="keywords"
-            content="Level X, gaming league, competitive gaming, India, tournaments, challenges, esports, mobile gaming, PC gaming, cash prizes, rewards, leaderboards">
-        <meta name="author" content="Level X ">
+            content="Level X, gaming league, competitive gaming, India, tournaments, challenges, esports, mobile gaming, PC gaming, cash prizes, rewards, leaderboards, refer and earn">
+        <meta name="author" content="Level X">
         <meta name="robots" content="index, follow">
 
         <meta property="og:title" content="Level X - Download & Level Up Your Game | Competitive Gaming in India">
@@ -373,6 +373,81 @@
                 /* Change text color on hover */
             }
 
+            .refer-and-earn {
+                background-color: #2c3e50;
+                color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 30px;
+            }
+
+            .refer-and-earn h2 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            .refer-and-earn p {
+                margin-bottom: 10px;
+                line-height: 1.6;
+            }
+
+            .refer-and-earn a {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #58a15e;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 18px;
+            }
+
+            .refer-and-earn a:hover {
+                background-color: #4a8a4e;
+            }
+
+            /* Trustworthy Features Section Styles */
+            .trustworthy-features {
+                background-color: rgba(52, 152, 219, 0.5);
+                /* Set background color with opacity */
+                color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 30px;
+                text-align: center;
+                /* Center the content */
+                opacity: 0.7;
+                /* Set opacity */
+            }
+
+            .trustworthy-features h2 {
+                font-size: 28px;
+                /* Increase font size for better emphasis */
+                margin-bottom: 20px;
+                /* Increase spacing below the heading */
+            }
+
+            .trustworthy-features ul {
+                list-style-type: none;
+                padding: 0;
+                margin-bottom: 20px;
+                /* Increase spacing below the list */
+            }
+
+            .trustworthy-features li {
+                margin-bottom: 10px;
+                /* Increase spacing between list items */
+            }
+
+            .trustworthy-features p {
+                line-height: 1.6;
+                margin-bottom: 20px;
+                /* Increase spacing below paragraphs */
+            }
+
+
+
             @media screen and (max-width: 767px) {
                 .background-text {
                     display: flex;
@@ -418,6 +493,13 @@
             <p>Level X is the ultimate gaming league application for competitive gamers like you. Join thousands of
                 players in intense battles, tournaments, and challenges! Whether you're a casual gamer looking for some
                 fun or a hardcore competitive player seeking glory, Level X has something for everyone.</p>
+            <div class="refer-and-earn">
+                <h2>Refer and Earn</h2>
+                <p>Invite your friends to join Level X and earn rewards! For every friend who downloads and signs up
+                    using your referral code, you both get exclusive bonuses, such as in-game currency, power-ups, or
+                    even cash prizes.</p>
+                <a id="shareButton" class="download-button">Invite Friends Now</a>
+            </div>
             <h2>Key Features:</h2>
             <ul>
                 <li>Real-time match tracking</li>
@@ -483,7 +565,20 @@
                     <input type="submit" value="Subscribe">
                 </form>
             </div>
+            <div class="trustworthy-features">
+                <h2>Why Choose Level X?</h2>
+                <ul>
+                    <li>Secure and reliable gaming platform</li>
+                    <li>Transparent reward system</li>
+                    <li>Active community with thousands of players</li>
+                    <li>Regular updates and new game releases</li>
+                    <li>24/7 customer support</li>
+                    <li>Trusted by top gamers and influencers</li>
+                </ul>
+                <p>Join Level X today and experience the difference!</p>
+            </div>
         </div>
+
         <footer>
             <p>© 2024 Level X. All rights reserved. Lucky Draw | Tournaments | Competitive Gaming in India</p>
         </footer>
@@ -532,6 +627,35 @@
                         window.URL.revokeObjectURL(url);
                     });
             });
+
+            // Share Button Click Event Listener
+            document.getElementById('shareButton').addEventListener('click', function () {
+                const shareURL = 'https://level-x.onrender.com'; // Replace with your website URL
+                const shareText = 'Check out Level X - The ultimate gaming league app for competitive gamers in India!';
+                const shareTitle = 'Level X';
+
+                // Check if the navigator.share function is available (Web Share API)
+                if (navigator.share) {
+                    // Use Web Share API to share
+                    navigator.share({
+                        title: shareTitle,
+                        text: shareText,
+                        url: shareURL
+                    })
+                        .then(() => console.log('Successfully shared'))
+                        .catch((error) => console.error('Error sharing:', error));
+                } else {
+                    // Fallback to copy URL to clipboard if Web Share API is not supported
+                    const dummyInput = document.createElement('input');
+                    document.body.appendChild(dummyInput);
+                    dummyInput.value = shareURL;
+                    dummyInput.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(dummyInput);
+                    alert('Link copied to clipboard. You can paste it anywhere to share.');
+                }
+            });
+
         </script>
 
     </body>
