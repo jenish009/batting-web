@@ -491,6 +491,7 @@
             </h2>
             <a href="#" id="downloadButton" class="download-button animate-on-click">
                 <span class="download-icon">&#x2B07;</span> Download APK Now
+                <div class="loading-spinner"></div>
             </a>
             <p>Level X is the ultimate gaming league application for competitive gamers like you. Join thousands of
                 players in intense battles, tournaments, and challenges! Whether you're a casual gamer looking for some
@@ -611,7 +612,11 @@
                 // Add animation class to the button
                 this.classList.add('animate-click');
 
-                // Create a blob URL for the APK file
+                // Show loading spinner
+                const loadingSpinner = this.querySelector('.loading-spinner');
+                loadingSpinner.style.display = 'block';
+
+                // Fetch the file
                 fetch('Level X.apk')
                     .then(response => response.blob())
                     .then(blob => {
@@ -633,12 +638,14 @@
                         // Remove animation class after download starts
                         setTimeout(() => {
                             this.classList.remove('animate-click');
+                            loadingSpinner.style.display = 'none';
                         }, 500); // Adjust the timeout as needed
                     })
                     .catch(error => {
                         console.error('Error fetching APK file:', error);
-                        // Remove animation class if there's an error
+                        // Remove animation class and hide loading spinner if there's an error
                         this.classList.remove('animate-click');
+                        loadingSpinner.style.display = 'none';
                     });
             });
             document.getElementById('shareButton').addEventListener('click', function () {
